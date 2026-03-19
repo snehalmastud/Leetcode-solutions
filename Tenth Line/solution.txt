@@ -1,0 +1,14 @@
+# solution-1
+awk '{if(NR == 10) print $0}' file.txt
+
+awk 'NR == 10' file.txt
+
+
+# solution-2
+
+# head [-n count]
+# tail -n number: The location is number lines.
+# +10, not 10
+# tail -n 3 file.txt: final 3 lines
+# tail -n +3 file.txt： from 3rd line till the end
+head -n 10 file.txt | tail -n +10
